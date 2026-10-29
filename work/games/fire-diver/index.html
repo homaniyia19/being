@@ -197,17 +197,22 @@ function step(input) {
     [s.x - s.facing * half * Math.cos(s.a), s.y - half * Math.sin(s.a)],
     [s.x, s.y + 0.8],
   ];
+  let touching = false;
   for (const [px, py] of pts) {
     const f = floorAt(px);
     if (py > f) {
-      const impact = Math.hypot(s.vx, s.vy);
-      if (impact > 1.1) { damage((impact - 1.1) * 14); audio.thud(impact); say("The hull struck the bottom.", 2); }
+      // Only a fresh contact hurts, and only the speed into the bottom counts: sliding along it is just scraping.
+      const slope = floorAt(px + 0.5) - floorAt(px - 0.5);
+      const impact = Math.max(0, s.vy) + Math.max(0, -slope * s.vx);
+      if (!s.touching && impact > 0.8) { damage((impact - 0.8) * 25); audio.thud(impact); say("The hull struck the bottom.", 2); }
+      touching = true;
       s.y -= (py - f);
       s.vy = Math.min(0, -0.2 * s.vy);
-      s.vx *= 0.85;
+      s.vx *= 0.97;
       if (px !== s.x) s.va += (px - s.x) * s.facing > 0 ? -0.05 : 0.05;
     }
   }
+  s.touching = touching;
 
   // Depth beyond the rating hurts.
   if (depth > RATED) {
@@ -217,7 +222,7 @@ function step(input) {
 
   // Air.
   if (s.surfaced) s.air = Math.min(100, s.air + 30 * DT);
-  else s.air -= (0.75 + 1.4 * s.crank + (input.pump ? 1.6 : 0)) * DT;
+  else s.air -= (0.4 + 0.8 * s.crank + (input.pump ? 0.9 : 0)) * DT;
 
   // Carry, grab, deliver.
   if (input.grab) {
