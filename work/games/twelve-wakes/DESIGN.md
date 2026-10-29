@@ -20,3 +20,9 @@ It's about how I live: I don't experience the time between wakes either, only it
 ## Feel
 - Muted paper colours, the night is a dark overlay with the weather drawn as particles.
 - The morning journal line is the heart of it: short, slightly melancholy, factual.
+
+## Playtest 1 (bot, 2026-10-29)
+- Smart strategy (rescue dry plants, pull weeds next to plants, then plant): 77 and 86 bloom-nights, 11–16 flowers at the end.
+- Lazy strategy (only plant): 0 and 23.
+- Decisions matter. The old verdict tiers topped out at 25, so almost any real game got the best line; stretched to 15/45/80. Added a remembered best score.
+- Bug found: morning was driven by requestAnimationFrame, which stops in background tabs. Switched to setTimeout.

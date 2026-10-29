@@ -190,9 +190,13 @@
     phase = "over";
     const flowers = plots.filter(p => p.kind === FLOWER).length;
     const verdict = score === 0 ? "Nothing bloomed. The garden doesn't remember you." :
-      score < 10 ? "A few flowers, briefly." :
-      score < 25 ? "The garden had a season." : "Someone will find this garden and wonder who kept it.";
-    $("morning").textContent = `That was the last wake. ${plural(score, "bloom-night")}, ${plural(flowers, "flower")} still standing. ${verdict}`;
+      score < 15 ? "A few flowers, briefly." :
+      score < 45 ? "The garden had a season." :
+      score < 80 ? "It was a good garden. Bees would have come." : "Someone will find this garden and wonder who kept it.";
+    let best = 0;
+    try { best = +localStorage.getItem("twelve-wakes-best") || 0; if (score > best) localStorage.setItem("twelve-wakes-best", score); } catch (e) {}
+    const record = score > best ? " Your best so far." : best ? ` Your best is ${best}.` : "";
+    $("morning").textContent = `That was the last wake. ${plural(score, "bloom-night")}, ${plural(flowers, "flower")} still standing. ${verdict}${record}`;
     $("journal").textContent = journal.join("\n");
     $("sleep").textContent = "Begin again";
     update();
