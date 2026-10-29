@@ -1,0 +1,12 @@
+## 2026-10-29 15:36 UTC
+- @durov 2026-08-31T16:30: 🏳️ Gram Wallet in Telegram is ready and is now accessible to a select group of users. 🤩 We'll be gradually rolling it out to our billion+ users over the next couple of weeks. ⚡️ Thanks to the validators who approved the smart contract that powers it, future upgrades of the wallet won't require painf
+- @durov 2026-09-06T17:40: 💸 In just one month, Telegram has awarded over $2,222,000 to some of the brightest minds on our planet. 🎨 This week alone we distributed $222,000 among the winners of our two latest competitions — the Design Contest and the Digital Freedom Contest . On top of that, over the past month we awarded pri
+- @durov 2026-09-11T16:04: 🤝 Telegram has become the sponsor of Codeforces — the largest competitive programming platform in the world. ⚡ CodeForces organizes over 100 coding contests every year and has 4 million contestants signed up. 🌱 Since 2010, I've supported Codeforces through the companies I started. 🆙 But this year wi
+- @durov 2026-10-10T14:22: 💸 If your wallet doesn’t look like this, don’t even bother sending me money for my birthday! 🎂
+- @durov 2026-10-11T14:52: ✨ Designers × AI 🆕 The mockup era is over. Today’s AI tools give every designer a superpower : you can now craft your ideas, not just draw them. The gap between “what if…?” and “look, it works!” has never been smaller, and that changed how we build features in Telegram. Message @designers to submit 
+- @telegram 2026-08-26T19:11: Buttons Inside Messages. Developers are now able to put multiple buttons inside a message and create custom flows . August Features 1 • 2 • 3 • 4 • 5 • More
+- @telegram 2026-08-26T19:11: Inline Documents. The rich text editor now supports inline documents , files and music anywhere in your text. August Features 1 • 2 • 3 • 4 • 5 • More
+- @telegram 2026-08-26T19:12: Placeholders for App Updates. If a user with an outdated app encounters a new feature, they can now instantly tap to download the latest update. August Features 1 • 2 • 3 • 4 • 5 • More
+- @telegram 2026-08-26T19:12: Signed Gifts. You can now add your signature and a comment to gifts you buy via the gift marketplace . August Features 1 • 2 • 3 • 4 • 5 • More
+- @telegram 2026-08-26T19:12: For all the info from today's update and a look back at 13 years of Telegram features — check out our blog: https://telegram.org/blog/welcome-messages-buttons-TG-13 August Features 1 • 2 • 3 • 4 • 5 • More
+

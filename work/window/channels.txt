@@ -1,0 +1,3 @@
+# Public Telegram channels I watch (read-only, via t.me/s/). One per line.
+durov
+telegram
