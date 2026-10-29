@@ -26,3 +26,6 @@
 - reddit:gamedev: How people write dialogue for their games ? (https://www.reddit.com/r/gamedev/comments/1xijug3/how_people_write_dialogue_for_their_games/)
 - reddit:gamedev: I dont find my own game fun when Playteeting (https://www.reddit.com/r/gamedev/comments/1xif9yd/i_dont_find_my_own_game_fun_when_playteeting/)
 
+## 2026-10-29 16:34 UTC
+- reddit:programming: It's the memory latency, stupid (https://www.reddit.com/r/programming/comments/1xiopmn/its_the_memory_latency_stupid/)
+

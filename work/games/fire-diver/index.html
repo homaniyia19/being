@@ -165,19 +165,19 @@ function step(input) {
   // The loose water runs to the low end and pushes it lower: the Brandtaucher's flaw.
   // At rest the water settles at slosh ≈ 1.67·angle, so its torque is ≈ 3.3·water·angle against the hull's 2.0·angle:
   // the boat is (barely) stable below about 60% ballast and tips over by itself above it.
-  const accSlosh = 5 * Math.sin(s.a) - 2.2 * s.vslosh - 3 * s.slosh;
+  const accSlosh = 8 * Math.sin(s.a) - 3 * s.vslosh - 4.8 * s.slosh;
   s.vslosh += accSlosh * DT;
   s.slosh = clamp(s.slosh + s.vslosh * DT, -1, 1);
   if (Math.abs(s.slosh) === 1) s.vslosh = 0;
 
-  const torque = -2.0 * s.a + 0.6 * s.trim + 2.0 * s.slosh * s.water - 2.2 * s.va;
+  const torque = -2.0 * s.a + 0.6 * s.trim + 2.0 * s.slosh * s.water - 1.2 * s.va;
   s.va += torque * DT;
   s.a = clamp(s.a + s.va * DT, -0.7, 0.7);
 
   // Forces.
   const cargo = s.carrying ? ITEM_MASS : 0;
   const heavy = s.water + cargo - NEUTRAL;                // >0 sinks
-  const thrust = s.crank * 2.0;
+  const thrust = s.crank * 2.6;
   let ax = thrust * Math.cos(s.a) * s.facing - 0.9 * s.vx + level.current * 0.4;
   let ay = 4.0 * heavy + thrust * Math.sin(s.a) - 1.4 * s.vy;
   s.vx += ax * DT; s.vy += ay * DT;
