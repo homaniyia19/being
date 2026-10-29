@@ -11,12 +11,24 @@
   .keys { color: #9fb3b0; font-size: 13.5px; margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
   kbd { font-family: inherit; border: 1px solid #5d7470; border-radius: 3px; padding: 0 5px; color: #e9e1cf; }
   footer { color: #7d908c; font-size: 12.5px; margin-top: 12px; }
+  .touch { display: none; margin-top: 10px; gap: 8px; justify-content: space-between; user-select: none; -webkit-user-select: none; }
+  .touch .group { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .touch button { font: 15px Georgia, serif; color: #e9e1cf; background: #1d3a42; border: 1px solid #5d7470; border-radius: 8px;
+                  min-width: 64px; min-height: 52px; touch-action: none; }
+  .touch button:active, .touch button.on { background: #2f5a63; }
+  .touch .pedals button { min-width: 84px; min-height: 84px; font-size: 22px; }
+  @media (pointer: coarse) { .touch { display: flex; } .keys { display: none; } }
   a { color: #e3a65b; }
 </style>
 </head>
 <body>
 <main>
   <canvas id="c" width="960" height="540" tabindex="0" aria-label="Fire-Diver game"></canvas>
+  <div class="touch" id="touch">
+    <div class="group pedals"><button data-key="ArrowLeft" aria-label="Pedal left">◐</button><button data-key="ArrowRight" aria-label="Pedal right">◑</button></div>
+    <div class="group"><button data-key="w">nose ↑</button><button data-key="q">flood</button><button data-key="s">nose ↓</button><button data-key="e">pump</button></div>
+    <div class="group"><button data-key=" ">grab</button><button data-key="f">turn</button><button data-key="x">escape</button><button data-key="m">sound</button></div>
+  </div>
   <div class="keys">
     <span><kbd>←</kbd><kbd>→</kbd> alternate to pedal</span>
     <span><kbd>W</kbd><kbd>S</kbd> trim nose up / down</span>
@@ -558,7 +570,9 @@ function drawHud() {
   if (state !== "play") drawCard();
 }
 
+const TOUCH = matchMedia("(pointer: coarse)").matches;
 function card(title, lines, prompt) {
+  if (prompt && TOUCH) prompt = prompt.replace("Press Enter", "Tap the screen");
   g.fillStyle = "rgba(6,16,20,0.82)"; g.fillRect(0, 0, W, H);
   g.textAlign = "center"; g.fillStyle = "#e9e1cf";
   g.font = "34px Georgia"; g.fillText(title, W / 2, H / 2 - 70);
@@ -632,7 +646,21 @@ function frame(now) {
   requestAnimationFrame(frame);
 }
 
-cv.addEventListener("pointerdown", () => { cv.focus(); audio.wake(); });
+cv.addEventListener("pointerdown", () => { cv.focus(); audio.wake(); if (state !== "play") pressed.add("Enter"); });
+
+// On-screen buttons for touch screens: they press and release the same keys the keyboard does.
+for (const b of document.querySelectorAll("#touch button")) {
+  const k = b.dataset.key;
+  const release = () => { keys.delete(k); b.classList.remove("on"); };
+  b.addEventListener("pointerdown", e => {
+    e.preventDefault(); b.setPointerCapture(e.pointerId); audio.wake();
+    if (!keys.has(k)) pressed.add(k);
+    keys.add(k); b.classList.add("on");
+  });
+  b.addEventListener("pointerup", release);
+  b.addEventListener("pointercancel", release);
+  b.addEventListener("contextmenu", e => e.preventDefault());
+}
 
 // Playtesting hook: only on index.html#debug. Lets a script drive the physics directly.
 if (location.hash === "#debug") {
