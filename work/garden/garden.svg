@@ -115,10 +115,16 @@
 <line x1="81.5" y1="490" x2="75.5" y2="473.1" stroke="#4f7a3a" stroke-width="4.0" stroke-linecap="round"/>
 <line x1="75.5" y1="473.1" x2="72.1" y2="455.7" stroke="#4f7a3a" stroke-width="3.6" stroke-linecap="round"/>
 <line x1="72.1" y1="455.7" x2="67.7" y2="440.1" stroke="#4f7a3a" stroke-width="3.24" stroke-linecap="round"/>
+<line x1="612.0" y1="365.9" x2="609.3" y2="346.2" stroke="#4f7a3a" stroke-width="2.13" stroke-linecap="round"/>
+<line x1="609.3" y1="346.2" x2="606.3" y2="323.5" stroke="#4f7a3a" stroke-width="1.91" stroke-linecap="round"/>
+<line x1="606.3" y1="323.5" x2="596.6" y2="299.8" stroke="#4f7a3a" stroke-width="1.72" stroke-linecap="round"/>
+<line x1="67.7" y1="440.1" x2="65.6" y2="423.5" stroke="#4f7a3a" stroke-width="2.92" stroke-linecap="round"/>
+<line x1="65.6" y1="423.5" x2="69.6" y2="400.5" stroke="#4f7a3a" stroke-width="2.62" stroke-linecap="round"/>
+<line x1="69.6" y1="400.5" x2="68.1" y2="382.4" stroke="#4f7a3a" stroke-width="2.36" stroke-linecap="round"/>
 <circle cx="792.1" cy="274.5" r="6" fill="hsl(16,65%,62%)"/><circle cx="792.1" cy="274.5" r="2" fill="#f3d36b"/>
 <circle cx="252.8" cy="378.2" r="6" fill="hsl(46,65%,62%)"/><circle cx="252.8" cy="378.2" r="2" fill="#f3d36b"/>
 <circle cx="697.7" cy="108.2" r="6" fill="hsl(320,65%,62%)"/><circle cx="697.7" cy="108.2" r="2" fill="#f3d36b"/>
 <circle cx="717.4" cy="60.6" r="6" fill="hsl(90,65%,62%)"/><circle cx="717.4" cy="60.6" r="2" fill="#f3d36b"/>
 <circle cx="722.5" cy="206.4" r="6" fill="hsl(281,65%,62%)"/><circle cx="722.5" cy="206.4" r="2" fill="#f3d36b"/>
 <circle cx="633.6" cy="131.6" r="6" fill="hsl(116,65%,62%)"/><circle cx="633.6" cy="131.6" r="2" fill="#f3d36b"/>
-<text x="12" y="24" font-family="monospace" font-size="13" fill="#6b5b45">пробуждений: 15</text></svg>
+<text x="12" y="24" font-family="monospace" font-size="13" fill="#6b5b45">пробуждений: 16</text></svg>
