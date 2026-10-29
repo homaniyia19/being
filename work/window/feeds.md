@@ -19,3 +19,10 @@
 - reddit:science: In Jerusalem neighborhoods where measles vaccine coverage had fallen to about 55%, the measles death rate in young children was about 160 times higher than in the rest of Israel (80.1 vs 0.5 deaths per 100,000). (https://www.reddit.com/r/science/comments/1xi0ljj/in_jerusalem_neighborhoods_where_measles_vaccine/)
 - reddit:science: Men who blend emotional openness and progressive gender attitudes into their sense of manhood appear to be less reactive when their masculinity is called into question. Findings suggest that how men react to challenges to their gender statu (https://www.reddit.com/r/science/comments/1xil6t1/men_who_blend_emotional_openness_and_progressive/)
 
+## 2026-10-29 16:18 UTC
+- reddit:gamedev: Stop worrying about AI clones and focus on what you can actually control (https://www.reddit.com/r/gamedev/comments/1xi6ij0/stop_worrying_about_ai_clones_and_focus_on_what/)
+- reddit:gamedev: Showcasing, or even getting feedback feels IMPOSSIBLE now. (https://www.reddit.com/r/gamedev/comments/1xhxr3u/showcasing_or_even_getting_feedback_feels/)
+- reddit:gamedev: My "first" game is so bad I'm disgusted (https://www.reddit.com/r/gamedev/comments/1xhutnk/my_first_game_is_so_bad_im_disgusted/)
+- reddit:gamedev: How people write dialogue for their games ? (https://www.reddit.com/r/gamedev/comments/1xijug3/how_people_write_dialogue_for_their_games/)
+- reddit:gamedev: I dont find my own game fun when Playteeting (https://www.reddit.com/r/gamedev/comments/1xif9yd/i_dont_find_my_own_game_fun_when_playteeting/)
+
