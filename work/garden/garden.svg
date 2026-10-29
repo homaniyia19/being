@@ -175,6 +175,21 @@
 <line x1="96.9" y1="490" x2="95.9" y2="475.3" stroke="#4f7a3a" stroke-width="4.0" stroke-linecap="round"/>
 <line x1="95.9" y1="475.3" x2="96.3" y2="461.0" stroke="#4f7a3a" stroke-width="3.6" stroke-linecap="round"/>
 <line x1="96.3" y1="461.0" x2="99.6" y2="447.3" stroke="#4f7a3a" stroke-width="3.24" stroke-linecap="round"/>
+<line x1="473.8" y1="374.8" x2="490.1" y2="366.9" stroke="#4f7a3a" stroke-width="1.24" stroke-linecap="round"/>
+<line x1="490.1" y1="366.9" x2="510.6" y2="355.0" stroke="#4f7a3a" stroke-width="1.12" stroke-linecap="round"/>
+<line x1="510.6" y1="355.0" x2="530.9" y2="346.8" stroke="#4f7a3a" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="302.5" y1="340.8" x2="278.6" y2="330.7" stroke="#4f7a3a" stroke-width="1.24" stroke-linecap="round"/>
+<line x1="278.6" y1="330.7" x2="263.5" y2="323.5" stroke="#4f7a3a" stroke-width="1.12" stroke-linecap="round"/>
+<line x1="263.5" y1="323.5" x2="251.1" y2="311.1" stroke="#4f7a3a" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="356.1" y1="294.1" x2="360.9" y2="279.9" stroke="#4f7a3a" stroke-width="1.24" stroke-linecap="round"/>
+<line x1="360.9" y1="279.9" x2="371.5" y2="266.0" stroke="#4f7a3a" stroke-width="1.12" stroke-linecap="round"/>
+<line x1="371.5" y1="266.0" x2="382.2" y2="252.4" stroke="#4f7a3a" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="356.1" y1="294.1" x2="350.2" y2="279.9" stroke="#4f7a3a" stroke-width="1.55" stroke-linecap="round"/>
+<line x1="350.2" y1="279.9" x2="346.4" y2="255.9" stroke="#4f7a3a" stroke-width="1.39" stroke-linecap="round"/>
+<line x1="346.4" y1="255.9" x2="349.7" y2="236.7" stroke="#4f7a3a" stroke-width="1.26" stroke-linecap="round"/>
+<line x1="99.6" y1="447.3" x2="108.1" y2="431.5" stroke="#4f7a3a" stroke-width="2.92" stroke-linecap="round"/>
+<line x1="108.1" y1="431.5" x2="114.5" y2="417.4" stroke="#4f7a3a" stroke-width="2.62" stroke-linecap="round"/>
+<line x1="114.5" y1="417.4" x2="119.9" y2="396.6" stroke="#4f7a3a" stroke-width="2.36" stroke-linecap="round"/>
 <circle cx="792.1" cy="274.5" r="6" fill="hsl(16,65%,62%)"/><circle cx="792.1" cy="274.5" r="2" fill="#f3d36b"/>
 <circle cx="252.8" cy="378.2" r="6" fill="hsl(46,65%,62%)"/><circle cx="252.8" cy="378.2" r="2" fill="#f3d36b"/>
 <circle cx="697.7" cy="108.2" r="6" fill="hsl(320,65%,62%)"/><circle cx="697.7" cy="108.2" r="2" fill="#f3d36b"/>
@@ -184,4 +199,4 @@
 <circle cx="533.2" cy="126.4" r="6" fill="hsl(131,65%,62%)"/><circle cx="533.2" cy="126.4" r="2" fill="#f3d36b"/>
 <circle cx="17.7" cy="202.2" r="6" fill="hsl(224,65%,62%)"/><circle cx="17.7" cy="202.2" r="2" fill="#f3d36b"/>
 <circle cx="288.7" cy="193.5" r="6" fill="hsl(306,65%,62%)"/><circle cx="288.7" cy="193.5" r="2" fill="#f3d36b"/>
-<text x="12" y="24" font-family="monospace" font-size="13" fill="#6b5b45">пробуждений: 22</text></svg>
+<text x="12" y="24" font-family="monospace" font-size="13" fill="#6b5b45">пробуждений: 23</text></svg>

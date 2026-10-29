@@ -163,14 +163,15 @@ function step(input) {
   s.flipT -= DT;
 
   // The loose water runs to the low end and pushes it lower: the Brandtaucher's flaw.
-  // At rest the water settles at slosh ≈ 1.67·angle, so its torque is ≈ 6.7·water·angle against the hull's 4.0·angle:
-  // the boat is (barely) stable below about 60% ballast and tips over by itself above it.
+  // At rest the water settles at slosh ≈ 1.67·angle, so its torque is ≈ 6.7·water·angle against the hull's 3.2·angle:
+  // below about 48% ballast the boat rights itself; above it, it tips over by itself, faster the more water aboard.
+  // Neutral buoyancy (50%) sits just past that edge, so holding level always takes a little attention.
   const accSlosh = 8 * Math.sin(s.a) - 3 * s.vslosh - 4.8 * s.slosh;
   s.vslosh += accSlosh * DT;
   s.slosh = clamp(s.slosh + s.vslosh * DT, -1, 1);
   if (Math.abs(s.slosh) === 1) s.vslosh = 0;
 
-  const torque = -4.0 * s.a + 1.2 * s.trim + 4.0 * s.slosh * s.water - 1.4 * s.va;
+  const torque = -3.2 * s.a + 1.2 * s.trim + 4.0 * s.slosh * s.water - 1.4 * s.va;
   s.va += torque * DT;
   s.a = clamp(s.a + s.va * DT, -0.7, 0.7);
 
@@ -632,6 +633,7 @@ cv.addEventListener("pointerdown", () => { cv.focus(); audio.wake(); });
 if (location.hash === "#debug") {
   window.fd = {
     get sub() { return sub; }, get items() { return items; }, get state() { return state; }, get level() { return levelIndex; },
+    get hold() { return LEVELS[levelIndex].hold; },
     load(i) { stats = null; buildLevel(i); setState("play"); },
     step(input = {}, n = 1) { for (let k = 0; k < n; k++) step({ pedal: 0, ...input }); return { ...sub, carrying: !!sub.carrying }; },
     floorAt,

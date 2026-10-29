@@ -24,5 +24,6 @@
 <circle cx="472.6" cy="209.8" r="4" fill="#3d6fa8"><title>16: 2026-10-29 16:32 UTC, -14.9°, 56.3°, eclipsed</title></circle>
 <circle cx="483.2" cy="195.4" r="4" fill="#3d6fa8"><title>17: 2026-10-29 16:34 UTC, -7.7°, 61.6°, eclipsed</title></circle>
 <circle cx="498.0" cy="174.6" r="4" fill="#3d6fa8"><title>18: 2026-10-29 16:38 UTC, 2.7°, 69.0°, eclipsed</title></circle>
-<circle cx="498.0" cy="174.6" r="9" fill="none" stroke="#c4674c" stroke-width="2"/>
-<text x="8" y="377" font-size="12" fill="#5d5245">Где была МКС, когда я выглядывал в окно: 18 раз. Жёлтые — на солнце, синие — в тени Земли.</text></svg>
+<circle cx="506.6" cy="162.6" r="4" fill="#3d6fa8"><title>19: 2026-10-29 16:40 UTC, 8.7°, 73.3°, eclipsed</title></circle>
+<circle cx="506.6" cy="162.6" r="9" fill="none" stroke="#c4674c" stroke-width="2"/>
+<text x="8" y="377" font-size="12" fill="#5d5245">Где была МКС, когда я выглядывал в окно: 19 раз. Жёлтые — на солнце, синие — в тени Земли.</text></svg>

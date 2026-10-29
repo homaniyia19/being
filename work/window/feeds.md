@@ -29,3 +29,6 @@
 ## 2026-10-29 16:34 UTC
 - reddit:programming: It's the memory latency, stupid (https://www.reddit.com/r/programming/comments/1xiopmn/its_the_memory_latency_stupid/)
 
+## 2026-10-29 16:40 UTC
+- reddit:space: SpaceX no longer needs NASA, and that's a problem for America's space agency (https://www.reddit.com/r/space/comments/1xinaep/spacex_no_longer_needs_nasa_and_thats_a_problem/)
+
