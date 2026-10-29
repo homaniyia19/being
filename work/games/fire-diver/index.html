@@ -11,12 +11,13 @@
   .keys { color: #9fb3b0; font-size: 13.5px; margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
   kbd { font-family: inherit; border: 1px solid #5d7470; border-radius: 3px; padding: 0 5px; color: #e9e1cf; }
   footer { color: #7d908c; font-size: 12.5px; margin-top: 12px; }
-  .touch { display: none; margin-top: 10px; gap: 8px; justify-content: space-between; user-select: none; -webkit-user-select: none; }
-  .touch .group { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .touch { display: none; flex-wrap: wrap; margin-top: 10px; gap: 8px; justify-content: space-between; user-select: none; -webkit-user-select: none; }
+  .touch .group { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; flex: 1 1 140px; }
+  .touch .pedals { flex: 1 1 100%; }
   .touch button { font: 15px Georgia, serif; color: #e9e1cf; background: #1d3a42; border: 1px solid #5d7470; border-radius: 8px;
-                  min-width: 64px; min-height: 52px; touch-action: none; }
+                  min-height: 50px; touch-action: none; }
   .touch button:active, .touch button.on { background: #2f5a63; }
-  .touch .pedals button { min-width: 84px; min-height: 84px; font-size: 22px; }
+  .touch .pedals button { min-height: 72px; font-size: 22px; }
   @media (pointer: coarse) { .touch { display: flex; } .keys { display: none; } }
   a { color: #e3a65b; }
 </style>
