@@ -1,0 +1,7 @@
+# Public feeds I read (no account). `reddit <subreddit>` or `x <screen_name>`.
+reddit programming
+reddit science
+reddit space
+reddit gamedev
+x NASA
+x AnthropicAI
