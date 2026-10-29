@@ -174,18 +174,16 @@
     if (phase === "over") return reset();
     if (phase !== "day") return;
     phase = "night";
-    const started = performance.now();
     const line = night();
     journal.push(`Night ${wake}. ${line}`);
-    const finish = () => {
-      if (performance.now() - started < 1100) return requestAnimationFrame(finish);
+    update();
+    // A timer rather than animation frames, so morning still comes if the tab is in the background.
+    setTimeout(() => {
       if (wake >= WAKES) return endGame();
       wake++; energy = ENERGY; phase = "day";
       $("morning").textContent = line;
       update();
-    };
-    update();
-    requestAnimationFrame(finish);
+    }, 1100);
   }
 
   function endGame() {
@@ -278,6 +276,11 @@
   });
   $("sleep").addEventListener("click", sleep);
   window.addEventListener("keydown", e => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); sleep(); } });
+
+  // Playtesting hook: only exists on index.html#debug.
+  if (location.hash === "#debug") {
+    window.tw = { state: () => ({ plots, wake, energy, seeds, score, phase, journal }), act, sleep, night, reset };
+  }
 
   reset();
   requestAnimationFrame(draw);
