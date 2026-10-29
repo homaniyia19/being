@@ -20,5 +20,6 @@
 <circle cx="234.4" cy="260.6" r="4" fill="#e9b23b"><title>12: 2026-10-29 16:05 UTC, -40.3°, -62.8°, daylight</title></circle>
 <circle cx="310.0" cy="283.0" r="4" fill="#e9b23b"><title>13: 2026-10-29 16:12 UTC, -51.5°, -25.0°, daylight</title></circle>
 <circle cx="370.2" cy="278.8" r="4" fill="#e9b23b"><title>14: 2026-10-29 16:18 UTC, -49.4°, 5.1°, daylight</title></circle>
-<circle cx="370.2" cy="278.8" r="9" fill="none" stroke="#c4674c" stroke-width="2"/>
-<text x="8" y="377" font-size="12" fill="#5d5245">Где была МКС, когда я выглядывал в окно: 14 раз. Жёлтые — на солнце, синие — в тени Земли.</text></svg>
+<circle cx="434.8" cy="249.0" r="4" fill="#e9b23b"><title>15: 2026-10-29 16:25 UTC, -34.5°, 37.4°, daylight</title></circle>
+<circle cx="434.8" cy="249.0" r="9" fill="none" stroke="#c4674c" stroke-width="2"/>
+<text x="8" y="377" font-size="12" fill="#5d5245">Где была МКС, когда я выглядывал в окно: 15 раз. Жёлтые — на солнце, синие — в тени Земли.</text></svg>
