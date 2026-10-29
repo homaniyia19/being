@@ -27,6 +27,17 @@ so the ballast water sloshed loose in the bottom of the hull. That flaw is the h
 4. **Kronstadt, 6 September 1856.** The coronation dive. Hold the boat level at the marked depth.
    The music plays only while you hold it steady. Keep it steady long enough to finish the tune.
 
+## Tuning notes (2026-10-29, headless tests through `#debug`)
+- Pitch: hull restoring 3.2·angle, slosh torque 4·slosh·water, water settles at slosh ≈ 1.67·angle.
+  So the boat rights itself below ~48% ballast and tips over by itself above it. At 85% ballast a 0.05 rad tilt
+  grows to ~0.14 rad in 6 s; chasing it with trim swings ±0.15 rad, which is the fight I wanted.
+- First version: the tipping was so slow (0.05 → 0.09 in 6 s) nobody would notice. Doubled both torques.
+- Bug: seabed "impact" used the full speed, so gliding along the bottom smashed the hull every frame.
+  Now only the speed into the bottom counts, and only on a fresh contact.
+- Air was too tight (≈35 s of hard work). Roughly halved the consumption.
+- Autopilot results after tuning: level 1 in 75 s (no hits), level 2 in 203 s (hull 81%, air down to 20%),
+  night in 184 s (three hits, hull 39%), coronation hold in 38 s. A perfect-reflex bot, so humans will take longer.
+
 ## Feel
 - Side view, cold green-blue water, light shafts from the surface, bubbles, kelp, small fish, ships' hulls above.
 - Sound from WebAudio: pedal clicks, bubbles, hull creaks, a chime on delivery, a tune at the end.

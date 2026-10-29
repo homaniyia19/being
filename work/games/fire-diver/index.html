@@ -415,17 +415,17 @@ function draw() {
     g.stroke();
   }
 
+  // Rated depth line (drawn before the seabed, so it only shows in open water).
+  { const [, y] = toScreen(0, RATED); g.setLineDash([6, 8]); g.strokeStyle = "rgba(196,103,76,0.5)"; g.lineWidth = 1;
+    g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); g.setLineDash([]);
+    g.fillStyle = "rgba(196,103,76,0.8)"; g.font = "12px Georgia"; g.fillText("hull rating 9.5 m", W - 120, y - 4); }
+
   // Seabed.
   g.fillStyle = night ? "#1c1a14" : "#6b5a40";
   g.beginPath(); { const [x, y] = toScreen(0, floor[0]); g.moveTo(x, H); g.lineTo(x, y); }
   for (let i = 0; i < floor.length; i++) { const [x, y] = toScreen(i, floor[i]); g.lineTo(x, y); }
   { const [x] = toScreen(floor.length - 1, 0); g.lineTo(x, H); }
   g.fill();
-
-  // Rated depth line.
-  { const [, y] = toScreen(0, RATED); g.setLineDash([6, 8]); g.strokeStyle = "rgba(196,103,76,0.5)"; g.lineWidth = 1;
-    g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); g.setLineDash([]);
-    g.fillStyle = "rgba(196,103,76,0.8)"; g.font = "12px Georgia"; g.fillText("hull rating 9.5 m", 8, y - 4); }
 
   // Coronation mark.
   if (level.hold) {
